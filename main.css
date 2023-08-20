@@ -2,10 +2,10 @@ body {
   font-family: 'Open Sans', Helvetica, sans-serif;
   color: #fff;
   font-size: 18px;
-line-height: 1.42;
-background: #29292c;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+  line-height: 1.42;
+  background: #29292c;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -22,20 +22,44 @@ ul il {
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: normal;
 }
 
+p {
+  margin-top: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+.main-page-wrapper {
+background: url("./img/lion-header.jpg") center top no-repeat, url("./img/lion-small.png") right bottom 307px no-repeat;
+}
+
+.hero {
+  margin-bottom: 189px;
+}
+
+
+
+
+
 .container {
-margin: 0 auto;
-width: 1140px;
+  margin: 0 auto;
+  width: 1140px;
 }
 
 .header {
   height: 120px;
   position: relative;
-  margin-bottom: 156px;
+  margin-bottom: 129px;
 }
 
 .logo {
@@ -47,7 +71,7 @@ width: 1140px;
 
 .menu {
   position: absolute;
-  top: 32px;
+  top: 29px;
   left: 256px;
 }
 
@@ -55,9 +79,15 @@ width: 1140px;
   position: absolute;
   top: 19px;
   right: 0;
-   font-style: normal;
+  font-style: normal;
   text-align: right;
 }
+
+.contacts_desc {
+  color: #999;
+  font-size: 11px;
+}
+
 
 .menu__item {
   display: inline-block;
@@ -94,30 +124,30 @@ width: 1140px;
   font-size: 13px;
   text-decoration: underline;
   color: #dfb56d;
-  top:500px;
+  top: 500px;
 }
 
 .hero__text-section {
-  width: 400px;
+  width: 514px;
 }
 
 .hero__title {
-  font-size: 48px;
+  font-size: 58px;
   font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 18px;
+  line-height: 1.1;
+  margin-bottom: 24px;
 }
 
 .hero__subtitle {
-  font-size: 18 px;
+  font-size: 18px;
   color: #dfb56d;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .btn {
   background: #dfb56d;
   border-radius: 4px;
-  padding: 15px 38px;
+  padding: 16px 39px;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
@@ -126,7 +156,305 @@ width: 1140px;
   font-size: 14px;
 }
 
-.btn:hover {
+.btn--color--ginger {
+  background: #dfb56d;
+  ;
+}
+
+.btn--color--ginger:hover {
   background: #d3a556;
-  box-shadow: 0 0 255px 0 rgba(223, 181, 109, .15);
+  box-shadow: 0 0 255px 0 rgba(22, 11, 109, .15);
+}
+
+.btn--color--black {
+  background: #202123;
+}
+
+.btn--color--black:hover {
+  background: #dfb56d;
+}
+
+.section {
+  margin-bottom: 127px;
+}
+
+.section__title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 49px;
+}
+
+.offers__item {
+  min-height: 470px;
+  background: #fff;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 22px;
+  width: 362px;
+  color: #010001;
+  overflow: hidden;
+}
+
+
+.offers__header {
+  min-height: 162px;
+  margin-bottom: 28px;
+  position: relative;
+
+}
+
+.offers__header:before {
+  content: "";
+  width: 284px;
+  height: 284px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: -157px;
+  right: -104px;
+  background: #ccc;
+}
+
+.offers__header-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -44px;
+  margin-top: -32px;
+}
+
+.offers__item:last-child {
+  margin-right: 0;
+}
+
+.offers__item--theme--grey .offers__header:before {
+  background: #a5a5a4;
+}
+
+.offers__item--theme--blue .offers__header:before {
+  background: #556180;
+}
+
+.offers__item--theme--gold .offers__header:before {
+  background: #978455;
+}
+
+.offers__content {
+  padding: 36px 20px;
+  padding-top: 17px;
+
+}
+
+.offers__title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.offers__prices-cell {
+  display: inline-block;
+  vertical-align: top;
+  width: 122px;
+  margin-right: 29px;
+}
+
+.offers__price {
+  font-size: 36px;
+}
+
+.offers__prices-cell:last-child {
+  margin-right: 0;
+}
+
+.offers__price-desc {
+  color: #333;
+}
+
+.offers__prices {
+  margin-bottom: 50px;
+}
+
+11 .offers__btn-wrapper {
+  text-align: center;
+}
+
+.news {
+  margin-bottom: 55px;
+}
+
+.news__item {
+  width: 550px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 0 15px;
+}
+
+.news__cover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  overflow: hidden;
+  opacity: .4;
+}
+
+.news__text-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 25px 30px;
+  min-height: 140px;
+}
+
+.news__date {
+  font-size: 15px;
+  margin-bottom: 18px;
+  text-transform: lowercase;
+}
+
+.news__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.pager {
+  text-align: center;
+}
+
+.pager__display,
+.pager__list {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pager__display {
+  margin-right: 26px;
+}
+
+.pager__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pager__item--active .pager__link {
+  background: #353538;
+}
+
+.pager__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 32px;
+}
+
+.about:before, .about__desc {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 4px;
+}
+.about:before {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 488px;
+  height: 502px;
+background: url("./img/chess.jpg") center center / cover no-repeat;
+}
+
+.about__desc {
+  background: #202123;
+  padding: 80px 98px;
+  width: 780px;
+  margin-left: -142px;
+  margin-top: 166px;
+}
+
+.about__title {
+  font-weight: bold;
+  font-size: 36px;
+margin-bottom: 20px;
+}
+
+.about__desc-text {
+margin-bottom: 42px;
+}
+
+.about__desc-text p {
+margin-bottom: 20px;
+}
+
+.about__desc-text p:last-child {
+margin-bottom: 0px;
+}
+
+.footer-container__content {
+border-top: 1px solid #353538;
+}
+
+.footer {
+  position: relative;
+  height: 152px;
+}
+
+.socials__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.socials {
+  position: absolute;
+  top: 53px;
+  right: 300px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: block;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  background: center center no-repeat;
+}
+
+.socials__item--icon--telegram .socials__link {
+  background-image: url("./img/telegram.png");
+}
+
+.socials__item--icon--telegram .socials__link:hover {
+  background-image: url("./img/telegram-hover.png");
+}
+
+.socials__item--icon--vk .socials__link {
+  background-image: url("./img/vk.png");
+}
+
+.socials__item--icon--vk .socials__link:hover {
+  background-image: url("./img/vk-hover.png");
+}
+
+.socials__item--icon--fb .socials__link {
+  background-image: url("./img/fb.png");
+}
+
+.socials__item--icon--fb .socials__link:hover {
+  background-image: url("./img/fb-hover.png");
+}
+
+.socials__item--icon--insta .socials__link {
+  background-image: url("./img/insta.png");
+}
+
+.socials__item--icon--insta .socials__link:hover {
+  background-image: url("./img/insta-hover.png");
 }
